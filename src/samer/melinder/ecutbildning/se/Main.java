@@ -55,11 +55,6 @@ public class Main {
                 System.out.println("Weapon Name you're looking for is not in use ");
                 break;
 
-
-
-
-
-
         }
     }
     // metod nr 2 drinking healing potion
@@ -74,17 +69,20 @@ public class Main {
 
     public static void main(String[] args) {
         Main goodGuy = new Main("The Beast", hammer, 100, "Hammer");
-        Main badGuy =  new Main("Vader", magicWand,80,"Magic Wand");
+        Main badGuy = new Main("Vader", magicWand, 80, "Magic Wand");
 
         System.out.println(goodGuy.hp);
         goodGuy.beingAttacked(goodGuy.characterName, badGuy.characterName, badGuy.weaponDamage, badGuy.weaponName);
         badGuy.beingAttacked((badGuy.characterName), goodGuy.characterName, goodGuy.weaponDamage, goodGuy.weaponName);
         goodGuy.drinkingHealingPotion();
         badGuy.drinkingHealingPotion();
-        
-    }
-}
 
+        try {
+            int i = 1;
+            int j = i + 3;
+            System.out.println("Yay" + j);
+        } catch (Exception e) {
+            System.out.println("No way");
+        }
 
-
-111111
+    }}
